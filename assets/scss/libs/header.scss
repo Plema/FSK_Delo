@@ -1,0 +1,17 @@
+.header {
+  .header-mobile {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 5;
+    .logo-mobile {
+      background: url(../img/logo-mob.png) no-repeat;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

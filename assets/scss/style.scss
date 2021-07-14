@@ -1,4 +1,4 @@
-// @import 'libs/header';
+@import 'libs/header';
 // @import 'libs/footer';
 // @import 'libs/fonts';
 // @import 'libs/fontello';
@@ -162,35 +162,15 @@ p {
   height: 100%;
   z-index: 4;
 }
-@media (max-width: 1023px) {
-  .fullscreen-bg__video {
-    display: none;
-  }
+@media (min-width: 768px) {
 }
 @media (min-width: 1024px) {
-  .fullscreen-bg__video {
-    width: 125%;
-    left: -12%;
-  }
 }
 @media (min-width: 1280px) {
-  .fullscreen-bg__video {
-    width: 100%;
-    left: 0%;
-  }
 }
 @media (min-width: 1400px) {
-  .fullscreen-bg__video {
-    top: -10%;
-  }
 }
 @media (min-width: 1900px) {
-  .fullscreen-bg__video {
-    top: -12%;
-  }
 }
 @media (min-width: 2500px) {
-  .fullscreen-bg__video {
-    top: -20%;
-  }
 }
