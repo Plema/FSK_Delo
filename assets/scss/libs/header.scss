@@ -1,5 +1,13 @@
 .header {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
   .header-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 60px;
     padding: 10px;
@@ -7,24 +15,173 @@
     top: 0;
     left: 0;
     background: #fff;
-    z-index: 5;
+    z-index: 1;
     .logo-mobile {
       background: url(../img/logo-mob.png) no-repeat;
-      width: 100%;
-      height: 100%;
+      width: 136px;
+      height: 40px;
+    }
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      position: relative;
+      .icon-call {
+        width: 24px;
+        height: 24px;
+        i {
+          font-size: 24px;
+          color: #1a4383;
+        }
+      }
+      .header-burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        margin-right: 10px;
+        margin-left: 50px;
+        span {
+          position: absolute;
+          background: #1a4383;
+          width: 100%;
+          height: 2px;
+          left: 0;
+          top: 9px;
+          transition: all 0.3s ease 0s;
+        }
+        &::before,
+        &::after {
+          content: '';
+          background: #1a4383;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          left: 0;
+          transition: all 0.3s ease 0s;
+        }
+        &::before {
+          top: 0;
+        }
+        &::after {
+          bottom: 0;
+        }
+      }
+      .header-burger.active {
+        position: absolute;
+        top: 22px;
+        right: 11px;
+      }
+      .header-burger.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+        background: #2a2626;
+      }
+      .header-burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+        background: #2a2626;
+      }
+      .header-burger.active span {
+        transform: scale(0);
+      }
+
+      .header-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #f7f7f7;
+        transition: all 0.3s ease 0s;
+        overflow: auto;
+      }
+      .header-menu-wrapper {
+        background-color: #fffeff;
+        padding: 27px 18px 2px 19px;
+      }
+      .header-menu.active {
+        right: 0;
+      }
+      .header-list {
+        padding-left: 10px;
+        margin-bottom: 45px;
+      }
+      .header-link {
+        color: #231e1e;
+        font-size: 14px;
+        margin-left: 38px;
+      }
+      .header-list-item:not(:last-child) {
+        margin-bottom: 25px;
+      }
+      .footer-mobile {
+        border-top: 1px solid #e1e5ec;
+        padding: 41px 0 0;
+        margin: 0 auto;
+        text-align: center;
+        .footer-mobile-contact {
+          color: #231e1e;
+          font-family: Roboto;
+          font-size: 20px;
+          line-height: 47.96px;
+          margin-bottom: 7px;
+        }
+        .footer-mobile-button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          width: 209px;
+          height: 41px;
+          background-color: #1a4383;
+          border: none;
+          outline: none;
+          color: #ffffff;
+          font-size: 10px;
+          line-height: 47.96px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-bottom: 26px;
+        }
+        p {
+          color: #b2b2b2;
+          font-size: 11px;
+          &:first-of-type {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+    body.lock {
+      overflow: hidden;
     }
     @media (min-width: 768px) {
       padding: 10px 20px;
+      .header-menu.active {
+        width: 40%;
+      }
     }
     @media (min-width: 1024px) {
+      padding: 0;
+      display: none;
+      z-index: 0;
+      background: none;
+      width: 0;
+      .logo-mobile {
+        width: 0%;
+        height: 0%;
+      }
     }
-    @media (min-width: 1280px) {
-    }
-    @media (min-width: 1400px) {
-    }
-    @media (min-width: 1900px) {
-    }
-    @media (min-width: 2500px) {
+  }
+  .header-decktop {
+    @media (min-width: 1024px) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: rgb(173, 171, 171);
+      z-index: 5;
+      width: 200px;
+      height: 100vh;
     }
   }
 }
