@@ -111,8 +111,50 @@
         font-size: 14px;
         margin-left: 38px;
       }
+      .arrow {
+        display: inline-block;
+        font-size: 10px;
+        margin-left: 75px;
+      }
+      .arrow.show-list {
+        transform: rotate(90deg);
+      }
       .header-list-item:not(:last-child) {
         margin-bottom: 25px;
+      }
+      .header-link_project-bold {
+        font-weight: 700;
+        line-height: 47.98px;
+      }
+      .project-list {
+        display: none;
+        height: 175px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 47.98px;
+        padding: 20px 61px 0px 75px;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        a {
+          color: #b2b2b2;
+          &:hover,
+          &:focus {
+            color: #231e1e;
+          }
+        }
+        &::-webkit-scrollbar {
+          width: 6px;
+          height: 100%;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: #1a4383;
+        }
+        &::-webkit-scrollbar-track {
+          background-color: #e1e5ec;
+        }
+        .project-list-item:not(:last-child) {
+          margin-bottom: 25px;
+        }
       }
       .footer-mobile {
         border-top: 1px solid #e1e5ec;
@@ -160,28 +202,148 @@
       .header-menu.active {
         width: 40%;
       }
+
+      .nav-wrapper {
+        .project-list {
+          height: 180px;
+          padding-right: 50px;
+        }
+      }
     }
     @media (min-width: 1024px) {
-      padding: 0;
       display: none;
-      z-index: 0;
-      background: none;
-      width: 0;
-      .logo-mobile {
-        width: 0%;
-        height: 0%;
-      }
     }
   }
   .header-decktop {
+    display: none;
     @media (min-width: 1024px) {
+      display: block;
       position: fixed;
       top: 0;
       left: 0;
-      background: rgb(173, 171, 171);
+      background: #fff;
       z-index: 5;
-      width: 200px;
+      width: 300px;
       height: 100vh;
+      .logo-mobile {
+        background: url(../img/logo-mob.png) no-repeat;
+        width: 136px;
+        height: 40px;
+        margin: 20px 0 20px 29px;
+      }
+      .header-menu {
+        display: flex;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: fit-content;
+        background-color: #f7f7f7;
+        transition: all 0.3s ease 0s;
+        overflow: auto;
+      }
+      .header-menu-wrapper {
+        display: flex;
+        flex-direction: column;
+        background-color: #fffeff;
+        padding: 0 18px 2px 19px;
+      }
+      .header-menu.active {
+        right: 0;
+      }
+      .header-list {
+        padding-left: 10px;
+        margin-bottom: auto;
+      }
+      .header-link {
+        color: #231e1e;
+        font-size: 14px;
+        margin-left: 20px;
+      }
+      .arrow {
+        display: inline-block;
+        font-size: 10px;
+        margin-left: 45px;
+        cursor: pointer;
+      }
+      .arrow.show-list {
+        transform: rotate(90deg);
+      }
+      .header-list-item:not(:last-child) {
+        margin-bottom: 15px;
+      }
+      .header-link_project-bold {
+        font-weight: 700;
+        line-height: 47.98px;
+      }
+      .project-list {
+        display: none;
+        height: 140px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 47.98px;
+        padding: 20px 60px 0px 50px;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+
+        a {
+          color: #b2b2b2;
+          &:hover,
+          &:focus {
+            color: #231e1e;
+          }
+        }
+        &::-webkit-scrollbar {
+          width: 6px;
+          height: 100%;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: #1a4383;
+        }
+        &::-webkit-scrollbar-track {
+          background-color: #e1e5ec;
+        }
+        .project-list-item:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+      .footer-mobile {
+        border-top: 1px solid #e1e5ec;
+        padding: 41px 0 0;
+        margin: 0 auto;
+        text-align: center;
+        height: 258px;
+        .footer-mobile-contact {
+          color: #231e1e;
+          font-family: Roboto;
+          font-size: 20px;
+          line-height: 47.96px;
+          margin-bottom: 7px;
+        }
+        .footer-mobile-button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          width: 209px;
+          height: 41px;
+          background-color: #1a4383;
+          border: none;
+          outline: none;
+          color: #ffffff;
+          font-size: 10px;
+          line-height: 47.96px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-bottom: 26px;
+        }
+        p {
+          color: #b2b2b2;
+          font-size: 11px;
+          &:first-of-type {
+            margin-bottom: 15px;
+          }
+        }
+      }
     }
   }
 }
