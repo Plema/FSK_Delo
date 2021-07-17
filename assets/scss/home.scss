@@ -1,3 +1,6 @@
+.main-page {
+  width: 100%;
+}
 .wrapper {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/home.png) no-repeat;
   background-size: cover;
@@ -143,9 +146,11 @@
   }
   @media (min-width: 1024px) {
     background-size: cover;
+    background-position: 0 0;
     position: absolute;
     top: 0%;
     left: 0%;
+    width: 724px;
     &::before {
       width: 104px;
       height: 153px;
@@ -208,23 +213,3 @@
   @media (min-width: 2500px) {
   }
 }
-// .sidenav {
-//   height: 100%; /* Full-height: remove this if you want "auto" height */
-//   width: 160px; /* Set the width of the sidebar */
-//   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-//   z-index: 1; /* Stay on top */
-//   top: 0; /* Stay at the top */
-//   left: 0;
-//   background-color: #111; /* Black */
-//   overflow-x: hidden; /* Disable horizontal scroll */
-//   padding-top: 20px;
-// }
-
-// /* The navigation menu links */
-// .sidenav a {
-//   padding: 6px 8px 6px 16px;
-//   text-decoration: none;
-//   font-size: 25px;
-//   color: #818181;
-//   display: block;
-// }
