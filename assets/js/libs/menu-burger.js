@@ -9,7 +9,9 @@ $(function () {
     $('.arrow, .header-link_project').toggleClass('header-link_project-bold');
   });
 
-  $('.wrapper').css({
-    'margin-left': $('.header-decktop').width(),
-  });
+  if ($(window).width() >= 1024) {
+    $('.main-page').css({
+      'padding-left': $('.header-decktop').width(),
+    });
+  }
 });
