@@ -118,13 +118,13 @@
       }
       .arrow.show-list {
         transform: rotate(90deg);
+        margin-left: 75px;
       }
       .header-list-item:not(:last-child) {
         margin-bottom: 25px;
       }
       .header-link_project-bold {
         font-weight: 700;
-        line-height: 47.98px;
       }
       .project-list {
         display: none;
@@ -216,6 +216,8 @@
   }
   .header-decktop {
     display: none;
+    width: 0;
+    height: 0;
     @media (min-width: 1024px) {
       display: block;
       position: fixed;
@@ -273,7 +275,6 @@
       }
       .header-link_project-bold {
         font-weight: 700;
-        line-height: 47.98px;
       }
       .project-list {
         display: none;
@@ -295,6 +296,7 @@
         &::-webkit-scrollbar {
           width: 6px;
           height: 100%;
+          transition: all 0.5s ease 0;
         }
         &::-webkit-scrollbar-thumb {
           background-color: #1a4383;
