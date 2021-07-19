@@ -71,10 +71,14 @@
           height: 62px;
           border: 1px solid #f4f4f4;
           background-color: #1a4383;
-          &::after {
-            content: '>';
-            color: #fff;
-            font-size: 20px;
+          span {
+            font-size: 14px;
+            width: 8px;
+            height: 13px;
+            font-weight: normal;
+            i {
+              color: #ffffff;
+            }
           }
         }
         a {
@@ -91,13 +95,12 @@
   }
   @media (min-width: 768px) {
     background-size: cover;
-    position: absolute;
-    top: 10%;
+    position: relative;
     &::before {
       width: 104px;
       height: 153px;
       position: absolute;
-      top: -3%;
+      top: 4%;
       left: 19%;
       transform: translate(-50%, 0);
     }
@@ -106,66 +109,6 @@
         width: 585px;
         height: 264px;
         position: absolute;
-        bottom: 1%;
-      }
-      .container {
-        padding-left: 20px;
-      }
-      .main-content {
-        position: absolute;
-        transform: translate(0, -50%);
-        top: 59%;
-        h2 {
-          font-size: 48px;
-          margin-bottom: 45px;
-        }
-        p {
-          font-size: 18px;
-          text-align: left;
-          max-width: 280px;
-        }
-        .button-wrapper {
-          display: flex;
-          margin-top: 5vh;
-          .more-details-button {
-            width: 64px;
-            height: 64px;
-            &::after {
-              content: '>';
-              color: #fff;
-              font-size: 22px;
-            }
-          }
-          a {
-            margin-top: 19px;
-            font-size: 14px;
-          }
-        }
-      }
-    }
-  }
-  @media (min-width: 1024px) {
-    background-size: cover;
-    background-position: 0 0;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 724px;
-    &::before {
-      width: 104px;
-      height: 153px;
-      position: absolute;
-      top: -3%;
-      left: 50%;
-      transform: translate(-50%, 0);
-    }
-    .main-content-wrapper {
-      &::after {
-        width: 585px;
-        height: 264px;
-        position: absolute;
-        transform: translate(-50%, 0);
-        left: 64%;
         bottom: 0%;
       }
       .container {
@@ -183,18 +126,70 @@
           font-size: 18px;
           text-align: left;
           max-width: 280px;
+          margin-bottom: 9vh;
         }
         .button-wrapper {
           display: flex;
-          margin-top: 5vh;
+
           .more-details-button {
             width: 64px;
             height: 64px;
-            &::after {
-              content: '>';
-              color: #fff;
-              font-size: 22px;
-            }
+          }
+          a {
+            margin-top: 19px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    background-size: cover;
+    background-position: 0 0;
+    position: relative;
+    width: 100%;
+    &::before {
+      background: url(../img/Slice_3.png) no-repeat;
+      width: 157px;
+      height: 304px;
+      position: absolute;
+      top: -12%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    .main-content-wrapper {
+      padding: 0;
+
+      &::after {
+        background: url(../img/Slice_4.png) no-repeat;
+        width: 1006px;
+        height: 529px;
+        position: absolute;
+        transform: translate(-50%, 0);
+        left: 74%;
+        bottom: -35%;
+      }
+      .container {
+        padding-left: 80px;
+      }
+      .main-content {
+        position: absolute;
+        transform: translate(0, -50%);
+        top: 65%;
+        h2 {
+          font-size: 60px;
+          margin-bottom: 50px;
+        }
+        p {
+          font-size: 20px;
+          max-width: 300px;
+          margin-left: 100px;
+        }
+        .button-wrapper {
+          margin: 0 0 0 100px;
+          .more-details-button {
+            width: 64px;
+            height: 64px;
           }
           a {
             margin-top: 19px;
@@ -205,8 +200,108 @@
     }
   }
   @media (min-width: 1280px) {
+    &::before {
+      width: 157px;
+      height: 304px;
+      top: -12%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    .main-content-wrapper {
+      &::after {
+        width: 1006px;
+        height: 529px;
+        transform: translate(-50%, 0);
+        left: 68%;
+        bottom: -30%;
+      }
+      .container {
+        padding-left: 100px;
+      }
+      .main-content {
+        position: absolute;
+        transform: translate(0, -50%);
+        top: 65%;
+        h2 {
+          font-size: 70px;
+          margin-bottom: 50px;
+        }
+        p {
+          font-size: 24px;
+          max-width: 360px;
+          margin-left: 140px;
+        }
+        .button-wrapper {
+          margin: 0 0 0 140px;
+          .more-details-button {
+            width: 80px;
+            height: 80px;
+            span {
+              font-size: 18px;
+              width: 9px;
+              height: 15px;
+            }
+          }
+          a {
+            margin-top: 22px;
+            margin-left: 16px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
   }
   @media (min-width: 1400px) {
+    &::before {
+      width: 207px;
+      height: 304px;
+      top: -10%;
+      left: 39%;
+      transform: translate(-50%, 0);
+    }
+    .main-content-wrapper {
+      &::after {
+        width: 1006px;
+        height: 529px;
+        transform: translate(-50%, 0);
+        left: 57%;
+        bottom: -30%;
+      }
+      .container {
+        padding-left: 100px;
+      }
+      .main-content {
+        top: 60%;
+        h2 {
+          font-size: 100px;
+          margin-bottom: 30px;
+          max-width: 700px;
+        }
+        p {
+          font-size: 24px;
+          max-width: 360px;
+          margin-left: 250px;
+          margin-bottom: 6vh;
+        }
+        .button-wrapper {
+          margin-left: 250px;
+          .more-details-button {
+            width: 80px;
+            height: 80px;
+            span {
+              font-size: 18px;
+              width: 9px;
+              height: 15px;
+            }
+          }
+          a {
+            margin-top: 22px;
+            margin-left: 16px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
   }
   @media (min-width: 1900px) {
   }
