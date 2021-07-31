@@ -27,6 +27,9 @@ $(document).ready(function () {
         settings: {
           arrows: false,
           dots: false,
+          // vertical: false,
+          // verticalSwiping: false,
+          // horizontal: true,
         },
       },
     ],
