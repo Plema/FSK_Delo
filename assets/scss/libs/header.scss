@@ -211,8 +211,8 @@
 
       .nav-wrapper {
         .project-list {
-          height: 180px;
-          padding-right: 50px;
+          height: 190px;
+          padding-right: 45px;
         }
       }
     }
@@ -233,11 +233,18 @@
       z-index: 5;
       width: 320px;
       height: 100vh;
-      .logo-mobile {
+      .logo-decktop {
         background: url(../img/logo-mob.png) no-repeat;
+        background-size: cover;
         width: 208px;
         height: 61px;
         margin: 20px 0 15px 29px;
+        a {
+          cursor: pointer;
+          width: 208px;
+          height: 61px;
+          display: inline-block;
+        }
       }
       .header-menu {
         display: flex;
@@ -586,6 +593,10 @@
           left: 0;
         }
       }
+    }
+    @media (min-width: 768px) {
+      height: 100%;
+      padding: 70px 10px;
     }
     @media (min-width: 1024px) {
       width: 320px;
