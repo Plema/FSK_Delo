@@ -38,6 +38,16 @@
       }
     }
   }
+  @media (min-width: 768px) {
+    .footer-mobile {
+      p {
+        &:first-of-type {
+          width: 50%;
+          margin: 0 auto 15px;
+        }
+      }
+    }
+  }
   @media (min-width: 1024px) {
     display: none;
   }
