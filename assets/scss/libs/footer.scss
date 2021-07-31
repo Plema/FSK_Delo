@@ -1,0 +1,44 @@
+.footer {
+  background-color: #f7f7f7;
+  .footer-mobile {
+    border-top: 1px solid #e1e5ec;
+    padding: 41px 0 17px;
+    margin: 0 auto;
+    text-align: center;
+    width: 93.5%;
+    .footer-mobile-contact {
+      color: #231e1e;
+      font-family: Roboto;
+      font-size: 20px;
+      line-height: 47.96px;
+      margin-bottom: 7px;
+    }
+    .footer-mobile-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      width: 209px;
+      height: 41px;
+      background-color: #1a4383;
+      border: none;
+      outline: none;
+      color: #ffffff;
+      font-size: 10px;
+      line-height: 47.96px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 26px;
+    }
+    p {
+      color: #b2b2b2;
+      font-size: 11px;
+      &:first-of-type {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
