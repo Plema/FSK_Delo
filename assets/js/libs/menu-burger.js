@@ -10,9 +10,11 @@ $(function () {
   });
   $('.footer-mobile-button, .footer-decktop-button').click(function (event) {
     $('.back-call').addClass('show-window');
+    $('body').toggleClass('lock');
   });
   $('.close-window').click(function (event) {
     $('.back-call').toggleClass('show-window');
+    $('body').toggleClass('lock');
   });
   // $('.button').click(function (event) {
   //   $('.thanks-window').toggleClass('thanks-window-show');
