@@ -9,6 +9,84 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.min.css" data-inprogress="" />
+    <link rel="stylesheet" href="css/about.min.css" data-inprogress="" />
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <include src="assets/templates/header.html"></include>
+      <main class="main">
+        <div class="main-wrapper">
+          <div class="main-title">
+            <h1>О компании</h1>
+          </div>
+          <section class="codex-management">
+            <div>
+              <div>
+                <picture class="picture">
+                  <source srcset="../img/about-1-decktop.png" media="(min-width: 768px)" />
+                  <source srcset="../img/about-1-mob.png" media="(min-width: 320px)" />
+                  <img src="../img/about-1-mob.png" alt="кодекс управления картинка" />
+                </picture>
+              </div>
+              <div>
+                <h2 class="codex-management-title">Кодекс управления</h2>
+                <p class="codex-management-text">ФСК Дело стремится придерживаться передовых стандартов корпоративного управления, которые способствуют успешному развитию бизнеса и придают уверенности инвесторам.</p>
+                <p class="codex-management-text">
+                  Признавая важность высокого уровня корпоративного управления для успешного развития бизнеса и достижения взаимопонимания лиц, заинтересованных в деятельности компании, ФСК Дело разработала свой Кодекс корпоративного управления. Цели Кодекса заключаются в обеспечении эффективной
+                  защиты прав и интересов акционеров, прозрачности принятия решений, профессиональной и этической ответственности членов Совета директоров.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="advice-directors">
+            <div>
+              <div>
+                <picture class="picture">
+                  <source srcset="../img/about-2-decktop.png" media="(min-width: 768px)" />
+                  <source srcset="../img/about-2-mob.png" media="(min-width: 320px)" />
+                  <img src="../img/about-2-mob.png" alt="кодекс управления картинка" />
+                </picture>
+              </div>
+              <div>
+                <h2 class="advice-directors-title">Совет директоров</h2>
+                <p class="advice-directors-text">
+                  Совет директоров постоянно стремится к улучшению своей эффективности. Такие меры включают достижение оптимального баланса между профессиональными знаниями и умениями членов Совета директоров, а также баланса среди исполнительных, неисполнительных и независимых директоров.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="executive-organs">
+            <div>
+              <div>
+                <picture class="picture">
+                  <source srcset="../img/about-3-decktop.png" media="(min-width: 768px)" />
+                  <source srcset="../img/about-3-mob.png" media="(min-width: 320px)" />
+                  <img src="../img/about-3-mob.png" alt="кодекс управления картинка" />
+                </picture>
+              </div>
+              <div>
+                <h2 class="executive-organs-title">Исполнительные органы</h2>
+                <p class="executive-organs-text">
+                  Руководство текущей деятельностью Компании осуществляется коллегиальным и единоличным исполнительными органами — Правлением и Генеральным директором. Исполнительные органы подотчетны Совету директоров Компании и общему собранию акционеров. Генеральный директор Компании одновременно
+                  является Председателем Правления Компании.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <include src="assets/templates/footer.html"></include>
+    </div>
+  </body>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/menu-burger.min.js"></script>
+  <script src="js/script.min.js"></script>
+  <script src="js/about.min.js"></script>
+  <script src="js/sticky-header.min.js"></script>
+  <!-- <script type="text/javascript">
+    window.addEventListener('scroll', function () {
+      let header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 320);
+    });
+  </script> -->
 </html>
