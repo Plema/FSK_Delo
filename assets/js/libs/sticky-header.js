@@ -1,7 +1,7 @@
 $(function () {
   var body_scroll = $(document).scrollTop();
   var changed_header = $('.header').outerHeight();
-  if ($(window).width() <= 1024) {
+  if ($(window).width() <= 1005) {
     $(window).scroll(function () {
       var watch_scroll = $(document).scrollTop();
 
