@@ -29,6 +29,13 @@
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-bottom: 26px;
+      &:hover,
+      &:focus {
+        color: #1a4383;
+        background-color: #ffffff;
+        border: 1px solid #1a4383;
+        font-weight: 700;
+      }
     }
     p {
       color: #b2b2b2;
@@ -36,6 +43,12 @@
       &:first-of-type {
         margin-bottom: 15px;
       }
+    }
+  }
+  @media (min-width: 480px) and (max-width: 767px) {
+    p {
+      width: 443px;
+      margin: 0 auto;
     }
   }
   @media (min-width: 768px) {
