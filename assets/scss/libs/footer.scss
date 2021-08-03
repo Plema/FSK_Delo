@@ -12,6 +12,11 @@
       font-size: 20px;
       line-height: 47.96px;
       margin-bottom: 7px;
+      transition: all 0.7s;
+      &:hover,
+      &:focus {
+        color: #1a4383;
+      }
     }
     .footer-mobile-button {
       display: flex;
@@ -29,6 +34,7 @@
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-bottom: 26px;
+      transition: all 0.7s;
       &:hover,
       &:focus {
         color: #1a4383;

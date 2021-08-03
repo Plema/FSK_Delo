@@ -106,13 +106,14 @@
       }
       .header-menu-wrapper {
         background-color: #fffeff;
-        padding: 22px 18px 2px 19px;
+        padding: 22px 0 2px;
       }
       .header-menu.active {
         right: 0;
       }
       .header-list {
-        padding-left: 10px;
+        padding-left: 28px;
+        padding-right: 19px;
         margin-bottom: 40px;
       }
       .header-link {
@@ -171,15 +172,22 @@
       }
       .footer-mobile {
         border-top: 1px solid #e1e5ec;
-        padding: 41px 0 0;
+        padding: 41px 1px 0;
         margin: 0 auto;
         text-align: center;
+        width: 90%;
+
         .footer-mobile-contact {
           color: #231e1e;
           font-family: Roboto;
           font-size: 20px;
           line-height: 47.96px;
           margin-bottom: 7px;
+          transition: all 0.7s;
+          &:hover,
+          &:focus {
+            color: #1a4383;
+          }
         }
         .footer-mobile-button {
           display: flex;
@@ -197,6 +205,7 @@
           text-transform: uppercase;
           letter-spacing: 1px;
           margin-bottom: 26px;
+          transition: all 0.7s;
           &:hover,
           &:focus {
             color: #1a4383;
@@ -356,6 +365,11 @@
           font-size: 20px;
           line-height: 47.96px;
           margin-bottom: 7px;
+          transition: all 0.7s;
+          &:hover,
+          &:focus {
+            color: #1a4383;
+          }
         }
         .footer-decktop-button {
           display: flex;
@@ -372,7 +386,7 @@
           line-height: 47.96px;
           text-transform: uppercase;
           letter-spacing: 1px;
-          transition: all 0.6s ease 0s;
+          transition: all 0.7s;
           &:hover,
           &:focus {
             color: #1a4383;
@@ -554,6 +568,7 @@
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 1px;
+        transition: all 0.7s;
         &:hover,
         &:focus {
           color: #1a4383;
