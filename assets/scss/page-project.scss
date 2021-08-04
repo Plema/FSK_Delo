@@ -1,0 +1,101 @@
+.main {
+  background: url(../img/project-figure-mob.png) 0 60px no-repeat;
+  background-size: contain;
+  background-color: #f7f7f7 !important;
+  padding: 60px 10px 23px;
+  .main-subtitle {
+    padding: 50px 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    h2 {
+      color: #231e1e;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: left;
+      margin-left: 56px;
+      position: relative;
+      &::before {
+        content: '';
+        width: 21px;
+        height: 1px;
+        background-color: #231e1e;
+        display: block;
+        position: absolute;
+        transform: translate(0%, -50%);
+        top: 50%;
+        left: -55px;
+      }
+    }
+    a {
+      color: #231e1e;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: left;
+      border-left: 1px solid #231e1e;
+      border-right: 1px solid #231e1e;
+      padding: 0 17px;
+      margin: 0 17px;
+    }
+    h3 {
+      margin-left: 56px;
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+  .project-wrapper {
+    padding: 10px 0 51px;
+    .project-title {
+      &__main {
+        font-size: 36px;
+        font-weight: 500;
+        text-align: left;
+        margin-bottom: 35px;
+      }
+      &__address {
+        font-size: 20px;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 27px;
+        text-align: left;
+        margin-bottom: 26px;
+      }
+      .button-site {
+        display: flex;
+        align-items: center;
+        position: relative;
+        &__link {
+          width: 81px;
+          height: 80px;
+          background-color: #1a4383;
+          position: relative;
+          cursor: pointer;
+          i {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            color: #ffffff;
+            font-size: 15px;
+          }
+        }
+        &__text {
+          color: #1a4383;
+          font-size: 10px;
+          font-weight: 400;
+          text-align: left;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          width: 100px;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+  @media (min-width: 400px) {
+    background: url(../img/project-figure-decktop.png) 0% 60px no-repeat;
+  }
+  @media (min-width: 1024px) {
+    background: url(../img/project-figure-decktop.png) 320px 0px no-repeat;
+    padding: 40px 0;
+  }
+}
