@@ -5,11 +5,46 @@
     <title>Страница проекта</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <link rel="icon" href="../img/favicon-min.svg" type="image/x-icon" />
+    <link rel="icon" href="img/favicon-min.svg" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.min.css" data-inprogress="" />
+    <link rel="stylesheet" href="css/page-project.min.css" data-inprogress="" />
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <include src="assets/templates/header.html"></include>
+      <main class="main">
+        <div class="main-wrapper">
+          <div class="main-subtitle">
+            <h2>Проекты</h2>
+            <a href="javascript:void(0)"><p>В продаже</p></a>
+            <h3>Мичуринский парк</h3>
+          </div>
+          <section class="project">
+            <div class="project-wrapper">
+              <div class="project-title">
+                <h1 class="project-title__main">Жилой квартал “Комфортный”</h1>
+                <address class="project-title__address">Старокоптевский пер. 4</address>
+                <div class="button-site">
+                  <a href="#up" class="button-site__link"><i class="icon-arrow"></i></a>
+                  <p class="button-site__text">Перейти на сайт объекта</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <include src="assets/templates/footer.html"></include>
+    </div>
+    <!-- <include src="assets/templates/preloader.html"></include> -->
+    <!-- Скрипты -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/preloader.min.js" type="module"></script>
+    <script src="js/menu-burger.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/sticky-header.min.js"></script>
+    <script src="js/page-project.min.js"></script>
+  </body>
 </html>
