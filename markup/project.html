@@ -169,8 +169,8 @@
                 <div class="tabs-triggers">
                   <a href="" class="tabs-triggers__item tabs-triggers__item-all tabs-triggers__item-active">Все</a>
                   <a href="#on-sale" class="tabs-triggers__item tabs-triggers__item-on-sale">в продаже</a>
-                  <a href="#planned" class="tabs-triggers__item tabs-triggers__item-planned">реализованные</a>
-                  <a href="#implemented" class="tabs-triggers__item tabs-triggers__item-implemented">планируемые</a>
+                  <a href="#planned" class="tabs-triggers__item tabs-triggers__item-planned">планируемые</a>
+                  <a href="#implemented" class="tabs-triggers__item tabs-triggers__item-implemented">реализованные</a>
                 </div>
               </div>
               <div class="tabs-content">
@@ -325,7 +325,7 @@
               <p class="button-up-text">Вверх</p>
             </div>
             <div class="load-more">
-              <a href="javascript:void(0)" class="load-more-button"><p>Посмотреть еще</p></a>
+              <a href="javascript:void(0)" class="load-more-button"><p>Посмотреть еще</p> </a><span></span>
             </div>
           </section>
         </div>
@@ -340,7 +340,14 @@
 </footer>
 
     </div>
-    <!-- <include src="assets/templates/preloader.html"></include> -->
+    <div id="preloader">
+  <div class="loader">
+    <svg class="loader__icon">
+      <use href="./img/sprite.svg#icon-logo_FSC_Delo"></use>
+    </svg>
+  </div>
+</div>
+
     <!-- Скрипты -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/preloader.min.js" type="module"></script>
