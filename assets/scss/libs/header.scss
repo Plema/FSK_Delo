@@ -120,6 +120,7 @@
         color: #231e1e;
         font-size: 14px;
         margin-left: 38px;
+        transition: all 0.7s;
         &:hover,
         &:focus {
           font-weight: 700;
@@ -333,6 +334,7 @@
 
         a {
           color: #b2b2b2;
+          transition: all 0.7s;
           &:hover,
           &:focus {
             color: #231e1e;
