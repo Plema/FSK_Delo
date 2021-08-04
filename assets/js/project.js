@@ -4,6 +4,50 @@ $(function () {
       'padding-left': $('.header-decktop').width(),
     });
   }
+  $('.tabs-triggers__item-all').click(function (e) {
+    e.preventDefault();
+
+    $('.tabs-content__item-on-sale').removeClass('tabs-content__item-active');
+    $('.tabs-content__item-planned').removeClass('tabs-content__item-active');
+    $('.tabs-content__item-implemented').removeClass('tabs-content__item-active');
+
+    $('.tabs-triggers__item-all').addClass('tabs-triggers__item-active');
+    $('.tabs-content__item-on-sale').addClass('tabs-content__item-active');
+    $('.tabs-content__item-planned').addClass('tabs-content__item-active');
+    $('.tabs-content__item-implemented').addClass('tabs-content__item-active');
+  });
+  $('.tabs-triggers__item-on-sale').click(function (e) {
+    e.preventDefault();
+
+    $('.tabs-triggers__item-all').removeClass('tabs-triggers__item-active');
+    $('.tabs-content__item-on-sale').removeClass('tabs-content__item-active');
+    $('.tabs-content__item-planned').removeClass('tabs-content__item-active');
+    $('.tabs-content__item-implemented').removeClass('tabs-content__item-active');
+
+    $('.tabs-content__item-on-sale').addClass('tabs-content__item-active');
+  });
+
+  $('.tabs-triggers__item-planned').click(function (e) {
+    e.preventDefault();
+
+    $('.tabs-triggers__item-all').removeClass('tabs-triggers__item-active');
+    $('.tabs-content__item-on-sale').removeClass('tabs-content__item-active');
+    $('.tabs-content__item-planned').removeClass('tabs-content__item-active');
+    $('.tabs-content__item-implemented').removeClass('tabs-content__item-active');
+
+    $('.tabs-content__item-planned').addClass('tabs-content__item-active');
+  });
+
+  $('.tabs-triggers__item-implemented').click(function (e) {
+    e.preventDefault();
+
+    $('.tabs-triggers__item-all').removeClass('tabs-triggers__item-active');
+    $('.tabs-content__item-on-sale').removeClass('tabs-content__item-active');
+    $('.tabs-content__item-planned').removeClass('tabs-content__item-active');
+    $('.tabs-content__item-implemented').removeClass('tabs-content__item-active');
+
+    $('.tabs-content__item-implemented').addClass('tabs-content__item-active');
+  });
 
   // $('.tabs-triggers__item').click(function (e) {
   //   e.preventDefault();
