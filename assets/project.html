@@ -5,7 +5,7 @@
     <title>Проекты</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <link rel="icon" href="../img/favicon-min.svg" type="image/x-icon" />
+    <link rel="icon" href="img/favicon-min.svg" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet" />
@@ -15,7 +15,7 @@
   <body>
     <div class="wrapper">
       <include src="assets/templates/header.html"></include>
-      <main class="main">
+      <main id="up" class="main">
         <div class="main-wrapper">
           <div class="main-title">
             <h1>Проекты</h1>
@@ -25,14 +25,14 @@
               <div class="tabs-header">
                 <h2 class="tabs-title">Статус проекта</h2>
                 <div class="tabs-triggers">
-                  <a href="" class="tabs-triggers__item tabs-triggers__item-all">Все</a>
+                  <a href="" class="tabs-triggers__item tabs-triggers__item-all tabs-triggers__item-active">Все</a>
                   <a href="#on-sale" class="tabs-triggers__item tabs-triggers__item-on-sale">в продаже</a>
                   <a href="#planned" class="tabs-triggers__item tabs-triggers__item-planned">реализованные</a>
                   <a href="#implemented" class="tabs-triggers__item tabs-triggers__item-implemented">планируемые</a>
                 </div>
               </div>
               <div class="tabs-content">
-                <div id="on-sale" class="tabs-content__item">
+                <div id="on-sale" class="tabs-content__item tabs-content__item-on-sale tabs-content__item-active">
                   <div class="tabs-content__item-img">
                     <picture class="picture">
                       <source srcset="img/project-img-1__decktop.png" media="(min-width: 480px)" />
@@ -50,7 +50,7 @@
                     <a href="javascript:void(0)">www.uno.moscow/starokoptevskij</a>
                   </div>
                 </div>
-                <div id="planned" class="tabs-content__item">
+                <div id="planned" class="tabs-content__item tabs-content__item-planned tabs-content__item-active">
                   <div class="tabs-content__item-img">
                     <picture class="picture">
                       <source srcset="img/project-img-2__decktop.png" media="(min-width: 480px)" />
@@ -68,7 +68,7 @@
                     <a href="javascript:void(0)">www.uno.moscow/starokoptevskij</a>
                   </div>
                 </div>
-                <div id="implemented" class="tabs-content__item">
+                <div id="implemented" class="tabs-content__item tabs-content__item-implemented tabs-content__item-active">
                   <div class="tabs-content__item-img">
                     <picture class="picture">
                       <source srcset="img/project-img-3__decktop.png" media="(min-width: 480px)" />
@@ -86,7 +86,7 @@
                     <a href="javascript:void(0)">www.uno.moscow/starokoptevskij</a>
                   </div>
                 </div>
-                <div id="on-sale" class="tabs-content__item">
+                <div id="on-sale" class="tabs-content__item tabs-content__item-on-sale tabs-content__item-active">
                   <div class="tabs-content__item-img">
                     <picture class="picture">
                       <source srcset="img/project-img-4__decktop.png" media="(min-width: 480px)" />
@@ -104,7 +104,7 @@
                     <a href="javascript:void(0)">www.uno.moscow/starokoptevskij</a>
                   </div>
                 </div>
-                <div id="on-sale" class="tabs-content__item">
+                <div id="on-sale" class="tabs-content__item tabs-content__item-on-sale tabs-content__item-active">
                   <div class="tabs-content__item-img">
                     <picture class="picture">
                       <source srcset="img/project-img-1__decktop.png" media="(min-width: 480px)" />
@@ -122,7 +122,7 @@
                     <a href="javascript:void(0)">www.uno.moscow/starokoptevskij</a>
                   </div>
                 </div>
-                <div id="planned" class="tabs-content__item">
+                <div id="planned" class="tabs-content__item tabs-content__item-planned tabs-content__item-active">
                   <div class="tabs-content__item-img">
                     <picture class="picture">
                       <source srcset="img/project-img-2__decktop.png" media="(min-width: 480px)" />
@@ -140,7 +140,7 @@
                     <a href="javascript:void(0)">www.uno.moscow/starokoptevskij</a>
                   </div>
                 </div>
-                <div id="implemented" class="tabs-content__item">
+                <div id="implemented" class="tabs-content__item tabs-content__item-implemented tabs-content__item-active">
                   <div class="tabs-content__item-img">
                     <picture class="picture">
                       <source srcset="img/project-img-3__decktop.png" media="(min-width: 480px)" />
@@ -158,7 +158,7 @@
                     <a href="javascript:void(0)">www.uno.moscow/starokoptevskij</a>
                   </div>
                 </div>
-                <div id="on-sale" class="tabs-content__item">
+                <div id="on-sale" class="tabs-content__item tabs-content__item-on-sale tabs-content__item-active">
                   <div class="tabs-content__item-img">
                     <picture class="picture">
                       <source srcset="img/project-img-4__decktop.png" media="(min-width: 480px)" />
@@ -178,12 +178,19 @@
                 </div>
               </div>
             </div>
+            <div class="button-up">
+              <a href="#up" class="button-up-link"><i class="icon-arrow"></i></a>
+              <p class="button-up-text">Вверх</p>
+            </div>
+            <div class="load-more">
+              <a href="javascript:void(0)" class="load-more-button"><p>Посмотреть еще</p></a>
+            </div>
           </section>
         </div>
       </main>
       <include src="assets/templates/footer.html"></include>
     </div>
-    <include src="assets/templates/preloader.html"></include>
+    <!-- <include src="assets/templates/preloader.html"></include> -->
     <!-- Скрипты -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/preloader.min.js" type="module"></script>
