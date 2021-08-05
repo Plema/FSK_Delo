@@ -1,3 +1,5 @@
+@import 'libs/slider-home';
+
 .main-page {
   width: 100%;
 }
@@ -75,12 +77,18 @@
           border: 1px solid #f4f4f4;
           background-color: #1a4383;
           span {
-            font-size: 14px;
-            width: 8px;
-            height: 13px;
-            font-weight: normal;
+            width: 81px;
+            height: 80px;
+            background-color: #1a4383;
+            position: relative;
+            cursor: pointer;
             i {
+              position: absolute;
+              transform: translate(-50%, -50%);
+              top: 50%;
+              left: 50%;
               color: #ffffff;
+              font-size: 15px;
             }
           }
         }
