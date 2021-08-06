@@ -45,6 +45,10 @@ $(document).ready(function () {
         settings: {
           rows: 2,
           slidesPerRow: 1,
+          slidesToShow: 1,
+          centerMode: false,
+          variableWidth: false,
+          draggable: false,
         },
       },
     ],
