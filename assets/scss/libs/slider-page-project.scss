@@ -66,9 +66,59 @@
     }
   }
 
-  @media (min-width: 1400px) {
+  @media (min-width: 1024px) {
+    .slick-arrow {
+      width: 50px;
+      height: 50px;
+
+      &.slick-prev {
+        background: url(../img/sl-arrow_l-dark.svg) 50% 50% / 15% no-repeat;
+        background-color: #eaeaea;
+        opacity: 0.9;
+      }
+      &.slick-next {
+        background: url(../img/sl-arrow_r-dark.svg) 50% 50% / 15% no-repeat;
+        background-color: #eaeaea;
+        opacity: 0.9;
+      }
+    }
+    .slick-dots {
+      button {
+        width: 9px;
+        height: 9px;
+      }
+      li {
+        &.slick-active button {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
   }
-  @media (min-width: 1920px) {
+  @media (min-width: 1400px) {
+    .slick-arrow {
+      width: 80px;
+      height: 80px;
+
+      &.slick-prev {
+        left: 146px;
+      }
+      &.slick-next {
+        right: 146px;
+      }
+    }
+    .slick-dots {
+      button {
+        width: 9px;
+        height: 9px;
+      }
+      li {
+        &.slick-active button {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
   }
 }
 .slider-projects {
@@ -137,6 +187,19 @@
     }
   }
 
+  @media (min-width: 1280px) {
+    .slick-arrow {
+      top: -25px;
+      &.slick-prev {
+        background: url(../img/sl-arrow_l-dark.svg) 0% 50% / 100% no-repeat;
+        right: 80px;
+      }
+      &.slick-next {
+        background: url(../img/sl-arrow_r-dark.svg) 100% 50% / 100% no-repeat;
+        right: 30px;
+      }
+    }
+  }
   @media (min-width: 1400px) {
   }
   @media (min-width: 1920px) {
