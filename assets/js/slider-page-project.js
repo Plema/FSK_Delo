@@ -15,19 +15,19 @@ $(document).ready(function () {
     touchThreshold: 10,
     touchMove: true,
     waitForAnimate: true,
-    centerMode: true,
-    variableWidth: true,
+    // centerMode: true,
+    // variableWidth: true,
   });
   $('.slider-projects').slick({
     arrows: true,
     dots: false,
     adaptiveHeight: false,
-    slideToShow: 1,
-    slideToScroll: 1,
+    slidesToShow: 2,
+    slidesToScroll: 1,
     speed: 800,
     easing: 'linear',
     infinite: true,
-    initialSlide: 0,
+    initialSlide: 1,
     autoplay: true,
     autoplaySpeed: 10000,
     draggable: true,
@@ -36,7 +36,17 @@ $(document).ready(function () {
     waitForAnimate: true,
     centerMode: false,
     variableWidth: false,
-    rows: 2,
-    slidesPerRow: 1,
+    rows: 1,
+    // slidesPerRow: 1,
+
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          rows: 2,
+          slidesPerRow: 1,
+        },
+      },
+    ],
   });
 });
