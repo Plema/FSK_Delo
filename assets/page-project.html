@@ -15,21 +15,29 @@
   <body>
     <div class="wrapper">
       <include src="assets/templates/header.html"></include>
-      <main class="main">
+      <main id="up" class="main">
         <div class="main-wrapper">
           <div class="main-subtitle">
-            <h2>Проекты</h2>
-            <a href="javascript:void(0)"><p>В продаже</p></a>
-            <h3>Мичуринский парк</h3>
+            <div class="subtitle-wrapper">
+              <h2 class="subtitle-title">Проекты</h2>
+              <a class="subtitle-link" href="javascript:void(0)"><p>В продаже</p></a>
+              <h3 class="subtitle-description">Мичуринский парк</h3>
+            </div>
+            <div class="route-wrapper">
+              <a href="javascript:void(0)" class="route-link route-link__back"><span class="route-link-arrow__back"></span>Назад</a>
+              <a href="javascript:void(0)" class="route-link route-link__next"><span class="route-link-arrow__next"></span>Следующий проект</a>
+            </div>
           </div>
           <section class="project">
             <div class="project-wrapper">
               <div class="project-title">
                 <h1 class="project-title__main">Жилой квартал “Комфортный”</h1>
-                <address class="project-title__address"><i class="icon-placeholder"></i>Старокоптевский пер. 4</address>
-                <div class="button-site">
-                  <a href="javascript:void(0)" class="button-site__link"><i class="icon-arrow"></i></a>
-                  <p class="button-site__text">Перейти на сайт объекта</p>
+                <div>
+                  <address class="project-title__address"><i class="icon-placeholder"></i>Старокоптевский пер. 4</address>
+                  <div class="button-site">
+                    <a href="javascript:void(0)" class="button-site__link"><i class="icon-arrow"></i></a>
+                    <p class="button-site__text">Перейти на сайт объекта</p>
+                  </div>
                 </div>
               </div>
               <div class="slider-banner_wrapper">
@@ -158,8 +166,8 @@
         <section class="slider-projects-wrapper">
           <h2>Другие проекты</h2>
           <div class="slider-projects">
-            <div id="on-sale" class="slider-item tabs-content__item tabs-content__item-on-sale">
-              <div class="tabs-content__item-img">
+            <div id="on-sale" class="slider-item slider-content__item slider-content__item-on-sale">
+              <div class="slider-content__item-img">
                 <picture class="picture">
                   <source srcset="img/project-img-1__decktop.png" media="(min-width: 480px)" />
                   <source srcset="img/project-img-1__mob.png" media="(min-width: 320px)" />
@@ -170,14 +178,14 @@
                   <a href="javascript:void(0)">Просмотреть проект</a>
                 </div>
               </div>
-              <div class="tabs-content__item-text">
+              <div class="slider-content__item-text">
                 <h3>UNO Старокоптевский</h3>
                 <address>Старокоптевский пер. 4</address>
                 <a href="javascript:void(0)">www.uno.moscow/starokoptevskij</a>
               </div>
             </div>
-            <div id="planned" class="slider-item tabs-content__item tabs-content__item-planned">
-              <div class="tabs-content__item-img">
+            <div id="planned" class="slider-item slider-content__item slider-content__item-planned">
+              <div class="slider-content__item-img">
                 <picture class="picture">
                   <source srcset="img/project-img-2__decktop.png" media="(min-width: 480px)" />
                   <source srcset="img/project-img-2__mob.png" media="(min-width: 320px)" />
@@ -188,14 +196,14 @@
                   <a href="javascript:void(0)">Просмотреть проект</a>
                 </div>
               </div>
-              <div class="tabs-content__item-text">
+              <div class="slider-content__item-text">
                 <h3>Михайловский парк</h3>
                 <address>Старокоптевский пер. 4</address>
                 <a href="javascript:void(0)">www.uno.moscow/starokoptevskij</a>
               </div>
             </div>
-            <div id="implemented" class="slider-item tabs-content__item tabs-content__item-implemented">
-              <div class="tabs-content__item-img">
+            <div id="implemented" class="slider-item slider-content__item slider-content__item-implemented">
+              <div class="slider-content__item-img">
                 <picture class="picture">
                   <source srcset="img/project-img-3__decktop.png" media="(min-width: 480px)" />
                   <source srcset="img/project-img-3__mob.png" media="(min-width: 320px)" />
@@ -206,14 +214,14 @@
                   <a href="javascript:void(0)">Просмотреть проект</a>
                 </div>
               </div>
-              <div class="tabs-content__item-text">
+              <div class="slider-content__item-text">
                 <h3>Академика Павлова</h3>
                 <address>Старокоптевский пер. 4</address>
                 <a href="javascript:void(0)">www.uno.moscow/starokoptevskij</a>
               </div>
             </div>
-            <div id="on-sale" class="slider-item tabs-content__item tabs-content__item-on-sale">
-              <div class="tabs-content__item-img">
+            <div id="on-sale" class="slider-item slider-content__item slider-content__item-on-sale">
+              <div class="slider-content__item-img">
                 <picture class="picture">
                   <source srcset="img/project-img-4__decktop.png" media="(min-width: 480px)" />
                   <source srcset="img/project-img-4__mob.png" media="(min-width: 320px)" />
@@ -224,14 +232,14 @@
                   <a href="javascript:void(0)">Просмотреть проект</a>
                 </div>
               </div>
-              <div class="tabs-content__item-text">
+              <div class="slider-content__item-text">
                 <h3>Большая Академическая</h3>
                 <address>Старокоптевский пер. 4</address>
                 <a href="javascript:void(0)">www.uno.moscow/starokoptevskij</a>
               </div>
             </div>
-            <div id="on-sale" class="slider-item tabs-content__item tabs-content__item-on-sale">
-              <div class="tabs-content__item-img">
+            <div id="on-sale" class="slider-item slider-content__item slider-content__item-on-sale">
+              <div class="slider-content__item-img">
                 <picture class="picture">
                   <source srcset="img/project-img-1__decktop.png" media="(min-width: 480px)" />
                   <source srcset="img/project-img-1__mob.png" media="(min-width: 320px)" />
@@ -242,14 +250,14 @@
                   <a href="javascript:void(0)">Просмотреть проект</a>
                 </div>
               </div>
-              <div class="tabs-content__item-text">
+              <div class="slider-content__item-text">
                 <h3>UNO Старокоптевский</h3>
                 <address>Старокоптевский пер. 4</address>
                 <a href="javascript:void(0)">www.uno.moscow/starokoptevskij</a>
               </div>
             </div>
-            <div id="planned" class="slider-item tabs-content__item tabs-content__item-planned">
-              <div class="tabs-content__item-img">
+            <div id="planned" class="slider-item slider-content__item slider-content__item-planned">
+              <div class="slider-content__item-img">
                 <picture class="picture">
                   <source srcset="img/project-img-2__decktop.png" media="(min-width: 480px)" />
                   <source srcset="img/project-img-2__mob.png" media="(min-width: 320px)" />
@@ -260,14 +268,14 @@
                   <a href="javascript:void(0)">Просмотреть проект</a>
                 </div>
               </div>
-              <div class="tabs-content__item-text">
+              <div class="slider-content__item-text">
                 <h3>Михайловский парк</h3>
                 <address>Старокоптевский пер. 4</address>
                 <a href="javascript:void(0)">www.uno.moscow/starokoptevskij</a>
               </div>
             </div>
-            <div id="implemented" class="slider-item tabs-content__item tabs-content__item-implemented">
-              <div class="tabs-content__item-img">
+            <div id="implemented" class="slider-item slider-content__item slider-content__item-implemented">
+              <div class="slider-content__item-img">
                 <picture class="picture">
                   <source srcset="img/project-img-3__decktop.png" media="(min-width: 480px)" />
                   <source srcset="img/project-img-3__mob.png" media="(min-width: 320px)" />
@@ -278,14 +286,14 @@
                   <a href="javascript:void(0)">Просмотреть проект</a>
                 </div>
               </div>
-              <div class="tabs-content__item-text">
+              <div class="slider-content__item-text">
                 <h3>Академика Павлова</h3>
                 <address>Старокоптевский пер. 4</address>
                 <a href="javascript:void(0)">www.uno.moscow/starokoptevskij</a>
               </div>
             </div>
-            <div id="on-sale" class="slider-item tabs-content__item tabs-content__item-on-sale">
-              <div class="tabs-content__item-img">
+            <div id="on-sale" class="slider-item slider-content__item slider-content__item-on-sale">
+              <div class="slider-content__item-img">
                 <picture class="picture">
                   <source srcset="img/project-img-4__decktop.png" media="(min-width: 480px)" />
                   <source srcset="img/project-img-4__mob.png" media="(min-width: 320px)" />
@@ -296,7 +304,7 @@
                   <a href="javascript:void(0)">Просмотреть проект</a>
                 </div>
               </div>
-              <div class="tabs-content__item-text">
+              <div class="slider-content__item-text">
                 <h3>Большая Академическая</h3>
                 <address>Старокоптевский пер. 4</address>
                 <a href="javascript:void(0)">www.uno.moscow/starokoptevskij</a>
@@ -304,10 +312,14 @@
             </div>
           </div>
         </section>
+        <div class="button-up">
+          <a href="#up" class="button-up-link"><i class="icon-arrow"></i></a>
+          <p class="button-up-text">Вверх</p>
+        </div>
       </main>
       <include src="assets/templates/footer.html"></include>
     </div>
-    <!-- <include src="assets/templates/preloader.html"></include> -->
+    <include src="assets/templates/preloader.html"></include>
     <!-- Скрипты -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/preloader.min.js" type="module"></script>
