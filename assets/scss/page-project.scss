@@ -342,7 +342,7 @@
       }
     }
     .button-up {
-      display: flex;
+      display: none;
       align-items: center;
       justify-content: center;
       position: relative;
@@ -501,6 +501,19 @@
   }
 
   @media (min-width: 1024px) {
+    padding: 83px 20px 10px 50px;
+    h2 {
+      font-size: 48px;
+      margin: 0;
+    }
+    .slider-projects {
+      padding: 55px 0 15px;
+      .slider-item {
+        padding: 25px 0;
+      }
+    }
+  }
+  @media (min-width: 1280px) {
     padding: 83px 20px 10px 50px;
     h2 {
       font-size: 48px;
