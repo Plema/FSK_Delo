@@ -41,7 +41,7 @@ $(document).ready(function () {
 
     responsive: [
       {
-        breakpoint: 1280,
+        breakpoint: 1024,
         settings: {
           rows: 2,
           slidesPerRow: 1,
