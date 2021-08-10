@@ -66,6 +66,11 @@
     .executive-organs {
       width: 443px;
       margin: 0 auto;
+      picture {
+        img {
+          width: 443px;
+        }
+      }
     }
   }
   @media (min-width: 768px) {
