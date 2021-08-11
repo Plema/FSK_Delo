@@ -1,0 +1,428 @@
+.main {
+  background: url(../img/project-figure-mob.png) 0 60px no-repeat;
+  background-size: contain;
+  background-color: #f7f7f7 !important;
+  padding: 60px 10px 32px;
+  .tender {
+    padding: 25px 0 15px;
+    &-title {
+      padding: 25px 0;
+      .title-wrapper {
+        display: flex;
+        h1 {
+          font-size: 18px;
+          font-weight: 700;
+          text-align: left;
+          margin-left: 56px;
+          position: relative;
+          color: #231e1e;
+          &::before {
+            content: '';
+            width: 21px;
+            height: 1px;
+            background-color: #231e1e;
+            display: block;
+            position: absolute;
+            transform: translate(0%, -50%);
+            top: 50%;
+            left: -55px;
+          }
+        }
+      }
+      .route-wrapper {
+        display: none;
+      }
+    }
+    &-description {
+      padding: 20px 0;
+      .number-tender {
+        margin-bottom: 24px;
+        .title {
+          color: #231e1e;
+          font-size: 16px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        .number {
+          color: #231e1e;
+          font-family: Roboto;
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+      .status-tender {
+        margin-bottom: 24px;
+        .title {
+          color: #231e1e;
+          font-size: 16px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        .status {
+          color: #231e1e;
+          font-family: Roboto;
+          font-size: 18px;
+          font-weight: 700;
+          &__open {
+            color: #749c3c;
+          }
+        }
+      }
+      .name-tender {
+        margin-bottom: 24px;
+        .title {
+          color: #231e1e;
+          font-size: 16px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        .description {
+          color: #231e1e;
+          font-family: Roboto;
+          font-size: 17px;
+          font-weight: 400;
+        }
+      }
+      .data-start-project {
+        margin-bottom: 24px;
+        .title {
+          color: #231e1e;
+          font-size: 16px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        &__wrapper {
+          &-data,
+          &-time {
+            color: #231e1e;
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 400;
+          }
+        }
+      }
+      .data-finish-project {
+        margin-bottom: 24px;
+        .title {
+          color: #231e1e;
+          font-size: 16px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        &__wrapper {
+          &-data,
+          &-time {
+            color: #231e1e;
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 400;
+          }
+        }
+      }
+      .project-address {
+        margin-bottom: 24px;
+        .title {
+          color: #231e1e;
+          font-size: 16px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        .address {
+          color: #231e1e;
+          font-family: Roboto;
+          font-size: 18px;
+          width: 262px;
+          font-weight: 400;
+          font-style: normal;
+        }
+      }
+      .short-description {
+        margin-bottom: 24px;
+        .title {
+          color: #231e1e;
+          font-size: 16px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        .description {
+          color: #231e1e;
+          font-family: Roboto;
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+      .full-description {
+        .title {
+          color: #231e1e;
+          font-size: 16px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        .description {
+          color: #231e1e;
+          font-family: Roboto;
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+    }
+    .participate-button {
+      padding: 20px 0;
+      transition: all 0.7s;
+      .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 209px;
+        height: 40px;
+        background-color: #1a4383;
+        color: #fff;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 48px;
+        text-align: left;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.7s;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        &:hover,
+        &:focus {
+          color: #1a4383;
+          background-color: #ffffff;
+          border: 1px solid #1a4383;
+          font-weight: 700;
+        }
+      }
+    }
+    .participate-link {
+      padding: 5px;
+      h3 {
+        color: #231e1e;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+        .link {
+          color: #0083ca;
+          &:hover,
+          &:focus {
+            color: #1a4383;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 400px) {
+    background: url(../img/project-figure-decktop.png) 0% 60px no-repeat;
+  }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .tender {
+      &-title,
+      &-description,
+      .participate-button,
+      .participate-link {
+        width: 443px;
+        margin: 0 auto;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    padding: 60px 20px 25px;
+  }
+  @media (min-width: 1024px) {
+    background: url(../img/project-figure-decktop.png) 320px 0px no-repeat;
+    padding: 40px 0;
+    .tender {
+      padding: 25px 0 20px;
+      &-title {
+        padding: 18px 50px 40px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .route-wrapper {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          .route-link {
+            color: #b2b2b2;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            &__back {
+              display: flex;
+              align-items: center;
+            }
+            &__next {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            &-arrow__back {
+              display: inline-block;
+              width: 37px;
+              height: 37px;
+              background: url(../img/sl-arrow_l-grey.svg) 50% 50% / 22% no-repeat;
+            }
+            &-arrow__next {
+              display: inline-block;
+              width: 37px;
+              height: 37px;
+              background: url(../img/sl-arrow_r-grey.svg) 50% 50% / 22% no-repeat;
+            }
+          }
+        }
+      }
+      &-description {
+        padding: 40px 50px;
+        .number-tender {
+          display: flex;
+          margin-bottom: 33px;
+          .title {
+            width: 188px;
+            margin-right: 36px;
+            margin-bottom: 0;
+          }
+        }
+        .status-tender {
+          display: flex;
+          margin-bottom: 33px;
+          .title {
+            width: 188px;
+            margin-right: 36px;
+            margin-bottom: 0;
+          }
+        }
+        .name-tender {
+          display: flex;
+          margin-bottom: 33px;
+          .title {
+            width: 188px;
+            margin-right: 36px;
+            margin-bottom: 0;
+          }
+          .description {
+            width: 400px;
+          }
+        }
+        .data-start-project,
+        .data-finish-project {
+          display: flex;
+          margin-bottom: 33px;
+          .title {
+            width: 188px;
+            margin-right: 36px;
+            margin-bottom: 0;
+          }
+        }
+        .project-address {
+          display: flex;
+          margin-bottom: 33px;
+          .title {
+            width: 188px;
+            margin-right: 36px;
+            margin-bottom: 0;
+          }
+          .address {
+            width: fit-content;
+          }
+        }
+        .short-description,
+        .full-description {
+          display: flex;
+          margin-bottom: 33px;
+          .title {
+            width: 188px;
+            margin-right: 36px;
+            margin-bottom: 0;
+          }
+          .description {
+            width: 400px;
+          }
+        }
+        .full-description {
+          margin-bottom: 0px;
+        }
+      }
+      .participate-button {
+        padding: 5px 50px 10px 268px;
+      }
+      .participate-link {
+        padding: 5px 50px 10px 268px;
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    .tender {
+      &-description {
+        padding: 40px 100px 40px 106px;
+        .name-tender {
+          .description {
+            width: 500px;
+          }
+        }
+        .short-description,
+        .full-description {
+          .description {
+            width: 500px;
+          }
+        }
+      }
+      .participate-button,
+      .participate-link {
+        padding: 5px 50px 10px 328px;
+      }
+    }
+  }
+  @media (min-width: 1400px) {
+    .tender {
+      &-title {
+        padding: 18px 100px 25px 90px;
+      }
+      &-description {
+        padding: 40px 100px 40px 146px;
+        .name-tender {
+          .description {
+            width: 600px;
+          }
+        }
+        .short-description,
+        .full-description {
+          .description {
+            width: 600px;
+          }
+        }
+      }
+      .participate-button,
+      .participate-link {
+        padding: 5px 50px 10px 368px;
+      }
+    }
+  }
+  @media (min-width: 1900px) {
+    .tender {
+      &-title {
+        align-items: center;
+        padding: 15px 175px 25px 90px;
+      }
+      &-description {
+        .name-tender {
+          .description {
+            width: fit-content;
+          }
+        }
+        .short-description {
+          .description {
+            width: fit-content;
+          }
+        }
+        .full-description {
+          .description {
+            width: 860px;
+          }
+        }
+      }
+    }
+  }
+}
