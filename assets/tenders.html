@@ -10,6 +10,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.min.css" data-inprogress="" />
+    <link rel="stylesheet" href="css/tenders.min.css" data-inprogress="" />
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <include src="assets/templates/header.html"></include>
+      <main class="main">
+        <section class="tenders">
+          <div class="tenders-title">
+            <h1>Тендеры</h1>
+          </div>
+          <div class="tenders-table"></div>
+        </section>
+      </main>
+      <include src="assets/templates/footer.html"></include>
+    </div>
+    <include src="assets/templates/preloader.html"></include>
+
+    <!-- Скрипты -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/preloader.min.js" type="module"></script>
+    <script src="js/menu-burger.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/sticky-header.min.js"></script>
+  </body>
 </html>
