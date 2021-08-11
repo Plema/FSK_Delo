@@ -2,9 +2,9 @@
   background: url(../img/project-figure-mob.png) 0 60px no-repeat;
   background-size: contain;
   background-color: #f7f7f7 !important;
-  padding: 60px 10px 25px;
+  padding: 60px 0px 25px;
   .tenders {
-    padding: 25px 0 5px;
+    padding: 25px 10px 5px;
     &-title {
       padding: 25px 0;
       h1 {
@@ -29,31 +29,266 @@
       }
     }
     &-table {
+      overflow-x: auto;
+      &::-webkit-scrollbar {
+        height: 13px;
+        width: 5px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #1a4383;
+      }
+      &::-webkit-scrollbar-track {
+        background-color: #e1e5ec;
+      }
+      table {
+        margin-bottom: 46px;
+        margin-left: -10px;
+        border-spacing: 10px 0px;
+        border-collapse: collapse;
+        position: relative;
+        overflow: hidden;
+        text-align: left;
+        border-collapse: separate;
+        empty-cells: hide;
+        // background-color: #fff;
+        tr {
+          .table-header {
+            border-collapse: separate;
+            &__name {
+              min-width: 313px;
+            }
+            &__status {
+              min-width: 146px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              .filter-status {
+                display: flex;
+                flex-direction: column;
+                &__icon {
+                  cursor: pointer;
+                  width: 11px;
+                  height: 5px;
+                }
+              }
+            }
+            &__project {
+              min-width: 302px;
+            }
+            &__description {
+              min-width: 458px;
+            }
+          }
+          th {
+            background-color: #1a4383;
+            // min-height: 45px;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 15px 23px;
+          }
+          .table-body {
+            &__status,
+            &__project,
+            &__description {
+              color: #231e1e;
+              font-size: 18px;
+              font-weight: 400;
+              text-align: left;
+              vertical-align: top;
+            }
+            &__status-finish {
+              color: #b2b2b2;
+            }
+          }
+          td {
+            background-color: #fff;
+            border-bottom: 3px solid #f7f7f7;
+            padding: 30px 34px 38px 22px;
+            a {
+              color: #0083ca;
+              font-size: 18px;
+              font-weight: 400;
+              &:hover,
+              &:focus {
+                color: #1a4383;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+    .pagination {
+      margin-top: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding-bottom: 86px;
+      &-arrow {
+        position: absolute;
+        bottom: 0;
+        width: 56px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s;
+        cursor: pointer;
+        &__prev {
+          background-color: #e1e5ec;
+          background: url(../img/sl-arrow_l.svg) 50% 50% / 25% no-repeat;
+          transform: rotate(90deg);
+          left: 0;
+          &:hover,
+          &:focus {
+            background-color: #b2b2b2;
+          }
+        }
+        &__next {
+          background-color: #e1e5ec;
+          background: url(../img/sl-arrow_r.svg) 50% 50% / 25% no-repeat;
+          transform: rotate(90deg);
+          right: 0;
+          &:hover,
+          &:focus {
+            background-color: #b2b2b2;
+          }
+        }
+      }
+      &-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        &__item {
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #b2b2b2;
+          font-size: 18px;
+          font-weight: 400;
+          width: 45px;
+          height: 44px;
+          &:hover,
+          &:focus {
+            background-color: #ffffff;
+          }
+          &:active {
+            color: #1a4383;
+          }
+        }
+      }
     }
   }
   @media (min-width: 400px) {
     background: url(../img/project-figure-decktop.png) 0% 60px no-repeat;
   }
   @media (min-width: 768px) {
-    padding: 60px 20px 25px;
+    padding: 60px 10px 25px;
+    .tenders {
+      .pagination {
+        padding-bottom: 55px;
+        &-arrow {
+          position: relative;
+          &__prev {
+            margin-right: 56px;
+          }
+          &__next {
+            margin-left: 56px;
+          }
+        }
+      }
+    }
   }
   @media (min-width: 1024px) {
     background: url(../img/project-figure-decktop.png) 320px 0px no-repeat;
     padding: 40px 0;
     .tenders {
+      padding: 0;
+
       &-title {
-        padding: 40px 50px;
+        padding: 15px 50px 40px;
       }
       &-table {
+        padding: 40px 0;
+        margin-left: 106px;
+        margin-right: 10px;
+      }
+      .pagination {
+        margin-left: 75px;
+        &-arrow {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+  @media (min-width: 1280px) and (max-width: 1439px) {
+    .tenders {
+      &-table {
+        margin-left: 10px;
+        padding: 40px 50px 40px 96px;
+        table {
+          tr {
+            .table-header {
+              &__name {
+                min-width: 100px;
+              }
+              &__status {
+                min-width: 80px;
+              }
+              &__project {
+                min-width: 150px;
+              }
+              &__description {
+                min-width: 150px;
+              }
+            }
+          }
+        }
+      }
+      .pagination {
+        margin-top: 0px;
+        margin-left: 0px;
+      }
+    }
+  }
+  @media (min-width: 1440px) and (max-width: 1899px) {
+    .tenders {
+      &-table {
+        table {
+          tr {
+            .table-header {
+              &__name {
+                min-width: 100px;
+              }
+              &__project {
+                min-width: 150px;
+              }
+              &__description {
+                min-width: 200px;
+              }
+            }
+          }
+        }
       }
     }
   }
   @media (min-width: 1440px) {
     .tenders {
       &-title {
-        padding: 40px 90px;
+        padding: 15px 90px 40px;
       }
       &-table {
+        margin-left: 10px;
+        padding: 40px 50px 40px 136px;
+      }
+      .pagination {
+        margin-top: 0px;
+        margin-left: 0px;
       }
     }
   }
