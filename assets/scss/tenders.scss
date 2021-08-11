@@ -40,5 +40,21 @@
   @media (min-width: 1024px) {
     background: url(../img/project-figure-decktop.png) 320px 0px no-repeat;
     padding: 40px 0;
+    .tenders {
+      &-title {
+        padding: 40px 50px;
+      }
+      &-table {
+      }
+    }
+  }
+  @media (min-width: 1440px) {
+    .tenders {
+      &-title {
+        padding: 40px 90px;
+      }
+      &-table {
+      }
+    }
   }
 }
