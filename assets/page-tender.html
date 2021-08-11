@@ -10,6 +10,80 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.min.css" data-inprogress="" />
+    <link rel="stylesheet" href="css/page-tender.min.css" data-inprogress="" />
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <include src="assets/templates/header.html"></include>
+      <main class="main">
+        <section class="tender">
+          <div class="tender-title">
+            <div class="title-wrapper"><h1>Тендеры</h1></div>
+            <div class="route-wrapper">
+              <a href="javascript:void(0)" class="route-link route-link__back"><span class="route-link-arrow__back"></span>Вернуться назад</a>
+            </div>
+          </div>
+          <div class="tender-description">
+            <div class="number-tender">
+              <h2 class="title">Номер тендера</h2>
+              <p class="number">12588AB</p>
+            </div>
+            <div class="status-tender">
+              <h2 class="title">Cтатус тендера</h2>
+              <p class="status status__open">Открыт</p>
+            </div>
+            <div class="name-tender">
+              <h2 class="title">Наименование тендера</h2>
+              <p class="description">Комплекс строительно-монтажных работ по устройству внешнего электроснабжения (КЛ 0,4 кВ)</p>
+            </div>
+            <div class="data-start-project">
+              <h2 class="title">Дата начала проведения тендера</h2>
+              <div class="data-start-project__wrapper">
+                <data class="data-start__wrapepr-data">11.07.2021</data>
+                <time class="data-start__wrapepr-time">13:00</time>
+              </div>
+            </div>
+            <div class="data-finish-project">
+              <h2 class="title">Дата окончания проведения тендера</h2>
+              <div class="data-finish-project__wrapper">
+                <data class="data-start__wrapepr-data">20.07.2021</data>
+                <time class="data-start__wrapepr-time">13:00</time>
+              </div>
+            </div>
+            <div class="project-address">
+              <h2 class="title">Проект</h2>
+              <address class="address">г. Москва, ул. Ивана Франко, вл. 4, 6</address>
+            </div>
+            <div class="short-description">
+              <h2 class="title">Краткое описание</h2>
+              <p class="description">Комплекс строительно-монтажных работ по устройству внешнего электроснабжения - КЛ 0,4 кВ</p>
+            </div>
+            <div class="full-description">
+              <h2 class="title">Полное описание</h2>
+              <p class="description">
+                Выполнить комплекс строительно- монтажных работ по устройству внешнего электроснабжения (КЛ 0,4 кВ) на объекте: "Многофункциональный комплекс с жилыми помещениями для временного проживания и подземной автостоянкой. По адресу: г. Москва, ул. Ивана Франков, вл.4, вл.6
+              </p>
+            </div>
+          </div>
+          <div class="participate-button">
+            <button href="javascript:void(0)" class="button">Принять участие</button>
+          </div>
+          <div class="participate-link">
+            <h3>Для участия в тендере вы можете написать на почту: <a href="mailto:fcktender@gmail.com" class="link">fcktender@gmail.com</a></h3>
+          </div>
+        </section>
+      </main>
+      <include src="assets/templates/footer.html"></include>
+    </div>
+    <include src="assets/templates/preloader.html"></include>
+
+    <!-- Скрипты -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/preloader.min.js" type="module"></script>
+    <script src="js/menu-burger.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/sticky-header.min.js"></script>
+    <script src="js/page-tender.min.js"></script>
+  </body>
 </html>
