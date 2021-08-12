@@ -10,6 +10,67 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.min.css" data-inprogress="" />
+    <link rel="stylesheet" href="css/contacts.min.css" data-inprogress="" />
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <include src="assets/templates/header.html"></include>
+      <main class="main">
+        <section class="contacts">
+          <div class="contacts__title">
+            <h1 class="title">Контакты</h1>
+          </div>
+          <div class="contacts__informations">
+            <div class="contacts__informations__wrapper">
+              <div class="location-address">
+                <h2 class="title">Адрес местонахождения</h2>
+                <address class="address">107000, Россия, Москва, Большая Семёновская улица, 32с7</address>
+              </div>
+              <div class="schedule">
+                <h2 class="title">График работы</h2>
+                <p class="schedule__days">с 9:00 до 19:00, без перерывов</p>
+                <p class="schedule__days">Выходной: сб, вс</p>
+              </div>
+              <div class="phone">
+                <h2 class="title">Телефон</h2>
+                <a class="phone__numbers" href="tel:+70901234567">+7 (090) 123-45-67</a>
+                <a class="phone__numbers" href="tel:+74501234567">+7 (450) 123-45-67</a>
+              </div>
+              <div class="email">
+                <h2 class="title">E-mail</h2>
+                <a class="mailto" href="mailto:fck@gmail.com">fck@gmail.com</a>
+              </div>
+            </div>
+            <div class="map">
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A79b84bd0077bf696a71a579d305561628ec0184ee0c43e5cbdd2c5e8fa2c98d8&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+            </div>
+          </div>
+          <div class="contacts__informations-description">
+            <div class="how-to-get-there">
+              <h2 class="title">Как добраться</h2>
+              <p class="description">Двигайтесь по улице Б. Семеновская от м. Электрозаводская, мимо Макдональдса, до здания с аркой. Ориентируйтесь по вывеске «Мой ортодонт» слева от арки. Поверните под арку. Вы окажетесь на парковке. Слева будет главный вход в офис.</p>
+            </div>
+            <div class="requisites">
+              <h2 class="title">Реквизиты</h2>
+              <p class="text">ФСК Дело</p>
+              <p class="text">ОГРН: 1167746614530; ИНН: 9715264590</p>
+              <p class="text">Юридический адрес: 142718, Московская область, Район Ленинский, рабочий посёлок Бутово, территория жилой комплекс Бутово-Парк, д.18, корп.1, пом. 59</p>
+              <p class="text">Почтовый адрес: 107023, Россия, Москва, Большая Семёновская улица, 32с7</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <include src="assets/templates/footer.html"></include>
+    </div>
+    <include src="assets/templates/preloader.html"></include>
+
+    <!-- Скрипты -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/preloader.min.js" type="module"></script>
+    <script src="js/menu-burger.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/sticky-header.min.js"></script>
+    <script src="js/contacts.min.js"></script>
+  </body>
 </html>
