@@ -13,9 +13,28 @@
     <link rel="stylesheet" href="css/404.min.css" data-inprogress="">
   </head>
   <body>
+    <main class="main">
+      <div class="white-wrapper">
+        <img class="error-img" src="img/error404.png" alt="error">
+      </div>
+      <div class="error-info">
+        <h1 class="error-info__title">ошибка</h1>
+        <p class="error-info__text">Страница, которую вы ищете, не существует или устарела.</p>
+        <p class="error-info__link">Вы можете вернуться <a href="javascript:void(0)">назад</a> либо</p>
+        <a class="error-info__btn" href="javascript:void(0)">Перейти на главную</a>
+      </div>
+    </main>
+    <div id="preloader">
+  <div class="loader">
+    <svg class="loader__icon">
+      <use href="./img/sprite.svg#icon-logo_FSC_Delo"></use>
+    </svg>
+  </div>
+</div>
+
+
     <!-- Скрипты -->
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/slider.min.js"></script>
+    <script src="js/preloader.min.js" type="module"></script>
   </body>
 </html>
