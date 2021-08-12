@@ -186,6 +186,7 @@
         border: none;
         outline: none;
         cursor: pointer;
+        transition: all 0.5s;
         &:hover,
         &:focus {
           color: #1a4383;
