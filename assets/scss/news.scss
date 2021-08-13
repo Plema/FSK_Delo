@@ -133,14 +133,19 @@
     .news {
       &-title {
         width: 100%;
-        padding: 50px 90px 25px;
+        padding: 40px 90px 40px;
       }
       &-items {
-        padding: 60px 20px;
+        padding: 40px 20px 0px 146px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         .news-item {
-          width: 45%;
+          width: 48%;
+          margin: 0 0 50px;
+          &:nth-child(odd) {
+            margin-right: 18px;
+          }
           &__text {
             h2 {
               a {
@@ -187,21 +192,31 @@
       }
     }
   }
-  @media (min-width: 1400px) {
-    .news {
-      &-items {
-        padding: 60px 65px;
-      }
-    }
-  }
+  // @media (min-width: 1280px) {
+  //   .news {
+  //     &-items {
+  //       .news-item {
+  //         width: 47%;
+  //       }
+  //     }
+  //   }
+  // }
+  // @media (min-width: 1400px) {
+  //   .news {
+  //     &-items {
+  //       .news-item {
+  //         width: 450px;
+  //       }
+  //     }
+  //   }
+  // }
   @media (min-width: 1600px) {
     .news {
       &-items {
-        padding: 60px 65px;
         display: flex;
         flex-wrap: wrap;
         .news-item {
-          width: 45%;
+          width: 48%;
         }
       }
     }
@@ -209,10 +224,10 @@
   @media (min-width: 1900px) {
     .news {
       &-title {
-        padding: 50px 146px 25px;
+        padding: 50px 146px 25px 90px;
       }
       &-items {
-        padding: 60px 146px;
+        padding: 60px 150px 0px 146px;
         display: flex;
         flex-wrap: wrap;
         .news-item {
@@ -222,8 +237,14 @@
           &:nth-child(odd) {
             margin-right: 50px;
           }
-          width: 614px;
           margin: 0;
+          &__img {
+            picture {
+              img {
+                width: 100%;
+              }
+            }
+          }
         }
       }
     }
