@@ -314,6 +314,20 @@
       }
     }
   }
+  @media (min-height: 750px) and (max-height: 949px) {
+    .main-content-wrapper {
+      .main-content {
+        top: 60%;
+      }
+    }
+  }
+  @media (min-height: 950px) and (max-height: 1100px) {
+    .main-content-wrapper {
+      .main-content {
+        top: 60%;
+      }
+    }
+  }
   @media (min-width: 1900px) {
     &::before {
       background: url(../img/figure.png) no-repeat;
@@ -331,7 +345,7 @@
         padding-left: 145px;
       }
       .main-content {
-        top: 70%;
+        // top: 60%;
         h1 {
           font-size: 120px;
           margin-bottom: 0px;
