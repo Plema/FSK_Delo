@@ -28,4 +28,6 @@ $(function () {
       'padding-left': $('.header-decktop').width(),
     });
   }
+
+  $('*[placeholder="Ваш телефон"]*').mask('+7(000)000-00-00');
 });
