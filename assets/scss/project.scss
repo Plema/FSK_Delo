@@ -368,14 +368,16 @@
   @media (min-width: 1280px) and (max-width: 1900px) {
     .tabs-content {
       padding-left: 146px;
-      display: inline-flex;
+      padding-right: 100px;
+      display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
     .tabs-content__item {
-      width: 42%;
-      &:nth-child(odd) {
-        margin-right: 50px;
-      }
+      width: 48%;
+      // &:nth-child(odd) {
+      //   margin-right: 50px;
+      // }
       &-img {
         width: 100%;
       }
