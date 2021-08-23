@@ -16,11 +16,18 @@ $(function () {
     $('.back-call').toggleClass('show-window');
     // $('body').toggleClass('lock');
   });
-  // $('.button').click(function (event) {
-  //   $('.thanks-window').toggleClass('thanks-window-show');
+  $('.button').click(function (event) {
+    $('.thanks-window').toggleClass('thanks-window-show');
+  });
+  $('.close-window-thx').click(function (event) {
+    $('.thanks-window').toggleClass('thanks-window-show');
+  });
+
+  // $('.back-call-wrapper').on('click', '.button', function (event) {
+  //   $('.back-call-wrapper').find('.thanks-window').addClass('thanks-window-show');
   // });
-  // $('.close-window-thx').click(function (event) {
-  //   $('.thanks-window').toggleClass('thanks-window-show');
+  // $('.back-call-wrapper').on('click', '.close-window-thx', function (event) {
+  //   $('.back-call-wrapper').find('.thanks-window').removeClass('thanks-window-show');
   // });
 
   if ($(window).width() >= 1024) {
