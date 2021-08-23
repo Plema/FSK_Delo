@@ -505,10 +505,11 @@
     &-wrapper {
       margin: 0 auto;
       width: 299px;
-      height: 498px;
+      min-height: 498px;
       background-color: #ffffff;
       background: url(../img/figure-form.png) no-repeat;
       padding-top: 66px;
+      padding-bottom: 10px;
       position: relative;
       z-index: 2;
     }
@@ -534,11 +535,14 @@
       color: #2a2626;
       font-size: 14px;
       font-weight: 300;
-      margin-bottom: 57px;
+      position: relative;
+      margin-bottom: 15px;
     }
     form {
       display: flex;
       flex-direction: column;
+      padding-top: 30px;
+      position: relative;
       input {
         margin: 0 auto;
         width: 275px;
@@ -558,7 +562,8 @@
           letter-spacing: 0.6px;
         }
       }
-      button {
+
+      .button {
         margin: 8px auto 24px;
         color: #fff;
         width: 209px;
@@ -571,6 +576,8 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         transition: all 0.7s;
+        padding: 0;
+        cursor: pointer;
         &:hover,
         &:focus {
           color: #1a4383;
@@ -602,14 +609,15 @@
           content: '';
           width: 10px;
           height: 10px;
-          background-color: #0083ca;
-          background-image: url(../img/ok-arrow.svg);
-          background-size: contain;
+          // background-color: #fff;
+          border: 1px solid black;
         }
       }
       .modal-checkbox:checked + .for-modal-checkbox::before {
-        background-color: #fff;
         border: 1px solid black;
+        background-color: #0083ca;
+        background-image: url(../img/ok-arrow.svg);
+        background-size: contain;
       }
       p {
         color: #b2b2b2;
@@ -617,6 +625,9 @@
         font-weight: 400;
         text-align: left;
         margin: 0 20px 0 30px;
+        &:first-of-type {
+          margin-bottom: 0;
+        }
       }
       .policy-link {
         text-decoration: underline;
@@ -645,6 +656,7 @@
         position: absolute;
         top: 15px;
         right: 20px;
+        cursor: pointer;
       }
       h2 {
         color: #2a2626;
