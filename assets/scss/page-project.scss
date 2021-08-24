@@ -223,7 +223,17 @@
   .button-up {
     display: none;
   }
-
+  @media (max-width: 767px) {
+    .project {
+      .slider-banner_wrapper {
+        .slider-item__item-img {
+          img {
+            height: 195px;
+          }
+        }
+      }
+    }
+  }
   @media (min-width: 400px) {
     .main-wrapper {
       background: url(../img/project-figure-decktop.png) 0% 60px no-repeat;
@@ -671,7 +681,8 @@
       }
     }
   }
-
+  @media (max-width: 767px) {
+  }
   @media (min-width: 1024px) {
     padding: 83px 20px 10px 50px;
     h2 {
