@@ -93,6 +93,7 @@
         position: relative;
         img {
           width: 100%;
+          max-height: 353px;
         }
         .item-img-label {
           display: block;
@@ -283,6 +284,12 @@
       &-content {
         &__item {
           padding: 40px 0;
+        }
+        &__item-img {
+          img {
+            width: 100%;
+            max-height: 353px;
+          }
         }
         &__item-text {
           h3 {
