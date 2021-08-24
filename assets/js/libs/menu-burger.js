@@ -30,7 +30,7 @@ $(function () {
   //   $('.back-call-wrapper').find('.thanks-window').removeClass('thanks-window-show');
   // });
 
-  if ($(window).width() >= 1024) {
+  if ($(window).width() >= 950) {
     $('.main-page').css({
       'padding-left': $('.header-decktop').width(),
     });
