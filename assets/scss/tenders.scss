@@ -65,6 +65,12 @@
               .filter-status {
                 display: flex;
                 flex-direction: column;
+                &__up {
+                  margin-bottom: 5px;
+                }
+                &__down {
+                  margin-top: 5px;
+                }
                 &__icon {
                   cursor: pointer;
                   width: 11px;
@@ -162,6 +168,16 @@
         justify-content: center;
         align-items: center;
         width: 300px;
+        .active {
+          a {
+            font-size: 18px;
+            font-weight: 400;
+            width: 45px;
+            height: 44px;
+            color: #1a4383;
+            padding: 0 12px;
+          }
+        }
         &__item {
           cursor: pointer;
           display: flex;
@@ -177,7 +193,13 @@
             background-color: #ffffff;
           }
           &:active {
-            color: #1a4383;
+            a {
+              font-size: 18px;
+              font-weight: 400;
+              width: 45px;
+              height: 44px;
+              color: #1a4383;
+            }
           }
         }
       }
