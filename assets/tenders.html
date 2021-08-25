@@ -25,15 +25,15 @@
               <table>
                 <tr class="table-header">
                   <th class="table-header__name">Наименование</th>
-                  <th class="table-header__status">
+                  <th class="table-header__status" id="status">
                     Статус
                     <div class="filter-status">
-                      <span class="filter-status__up"
+                      <span class="filter-status__up" id="filter-status__up"
                         ><svg class="filter-status__icon">
                           <use href="./img/sprite.svg#icon-status-up"></use>
                         </svg>
                       </span>
-                      <span class="filter-status__down">
+                      <span class="filter-status__down" id="filter-status__down">
                         <svg class="filter-status__icon">
                           <use href="./img/sprite.svg#icon-status-down"></use>
                         </svg>
@@ -133,6 +133,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/script.min.js"></script>
     <script src="js/sticky-header.min.js"></script>
+    <script src="js/jquery.sortElements.min.js"></script>
     <script src="js/tenders.min.js"></script>
   </body>
 </html>
